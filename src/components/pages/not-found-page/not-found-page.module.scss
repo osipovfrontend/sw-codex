@@ -1,0 +1,52 @@
+
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__img {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 0 40px;
+      width: 200px;
+    }
+
+
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 220px;
+    margin-top: -5px;
+  }
+
+
+
+  &__notification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 150%;
+    font-size: 21px;
+
+
+    &-text {
+
+    }
+
+
+
+
+  
+
+  }
+
+}
+
+.link-home-page {
+  margin-left: 10px;
+}
