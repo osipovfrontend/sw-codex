@@ -1,0 +1,46 @@
+.tile {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  &__title {
+    color: #EFF0EB;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: block;
+    height: 420px;
+    outline: 1px solid rgba(78, 78, 78, 0.25);
+    border-radius: 4px;
+    position: relative;
+
+    &::before {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      opacity: 0.6;
+      background: linear-gradient(110deg, #0B0203 0%, #1F2F3D 100.49%);
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.1;
+        transition: all .3s ease;
+      }
+    } 
+  }
+
+}

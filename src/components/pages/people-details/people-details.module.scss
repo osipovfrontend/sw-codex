@@ -1,0 +1,86 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+
+
+  &__logo-side {
+    width: 36px;
+    margin-bottom: 20px;
+
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 25px;
+
+  }
+
+  &__name,
+  &__last-name {
+    text-transform: uppercase;
+  }
+
+  &__name {
+
+  }
+
+  &__last-name {
+
+  }
+
+  &__level {
+    font-weight: 100;
+    margin: 0 auto 20px auto;
+    text-transform: uppercase;
+
+  }
+
+  &__color {
+    height: 4px;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    line-height: 150%;
+
+  }
+
+  &__info {
+
+  }
+
+  &__title-info {
+    margin-bottom: 15px;
+  }
+
+
+  &__props {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 290px));
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      line-height: 150%;
+    }
+
+    &-list-item {
+      width: 300px;
+      font-size: 15px;
+    }
+  
+  }
+
+}
+
+.character-photo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 300px;
+  height: auto;
+  transform: translateY(-25%);
+}

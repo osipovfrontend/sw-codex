@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  align-items: center;
+
+  .app-logo {
+    height: 30px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .menu-list {
+    display: flex;
+    margin-left: 40px;
+
+
+    &__item {
+      text-transform: uppercase;
+      color: rgba(196, 196, 196, 0.80);
+      border-bottom: 2px solid rgba(196, 196, 196, 0);
+      padding-bottom: 10px;
+      cursor: pointer;
+
+      &_active,
+      &:hover {
+        color: rgba(196, 196, 196, 1);
+        border-bottom: 2px solid rgba(196, 196, 196, 0.80);
+      }
+
+
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+
+    }
+  }
+}
