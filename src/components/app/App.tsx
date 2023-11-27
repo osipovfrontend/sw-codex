@@ -9,6 +9,8 @@ import Header from "../header/header";
 import styles from './App.module.scss'
 import PlanetDetails from "../pages/planet-details/planet-details";
 import NotFoundPage from "../pages/not-found-page/not-found-page";
+import StarshipDetails from "../pages/starship-details/starship-details";
+import StarshipList from "../pages/starship-list/starship-list";
 
 function App() {
   return (
@@ -17,10 +19,12 @@ function App() {
         <Header />
         <Routes>          
           <Route path="/" element={<MainPage />} />
-          <Route path='/characters' element={<PeopleList />} />
           <Route path='/planets' element={<PlanetList />} />
-          <Route path='/characters/:id' element={<PeopleDetails />} />
           <Route path='/planets/:id' element={<PlanetDetails />} />
+          <Route path='/characters' element={<PeopleList />} />
+          <Route path='/characters/:id' element={<PeopleDetails />} />  
+          <Route path='/starships' element={<StarshipList />} />
+          <Route path='/starships/:id' element={<StarshipDetails />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
