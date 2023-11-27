@@ -13,6 +13,18 @@ export const SWApiService = {
     return response.data
   },
 
+  async getAllStarShips() {
+    const response = await axios.get('http://localhost:3000/starships')
+
+    return response.data
+  },
+
+  async getStarshipById(id) {
+    const response = await axios.get(`http://localhost:3000/starships/${id}`)
+
+    return response.data
+  },
+
   async getPersonById(id) {
     const response = await axios.get(`http://localhost:3000/characters/${id}`)
 
